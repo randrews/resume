@@ -1,0 +1,121 @@
+!!! 5
+
+%html{:lang=>'en'}
+  %head
+    %title Ross Andrews
+    %link{:rel=>'stylesheet', :href=>'bootstrap/css/bootstrap.min.css'}
+    %script{:src=>'jquery-1.9.0.min.js'}
+    %script{:src=>'bootstrap/js/bootstrap.min.js'}
+
+  %body
+    .container
+      .row
+        .span10.offset2
+          %h1 Ross Andrews
+
+      .row
+        .span2
+          %ul#sidenav.nav.nav-list.nav-stacked.nav-pills.affix
+            %li
+              %a{:href=>"#about"}
+                %i.icon-chevron-right
+                About me
+            %li
+              %a{:href=>"#skills"}
+                %i.icon-chevron-right
+                Skills
+            %li
+              %a{:href=>"#experience"}
+                %i.icon-chevron-right
+                Experience
+            %li
+              %a{:href=>"#interests"}
+                %i.icon-chevron-right
+                Interests
+            %li
+              %a{:href=>"#education"}
+                %i.icon-chevron-right
+                Education
+
+        .span10
+
+          -# ----------------------------------------
+          %section#about
+            .page-header
+              %h2 About me
+
+          -# ----------------------------------------
+          %section#skills
+            .page-header
+              %h2 Skills
+
+          -# ----------------------------------------
+          %section#experience
+            .page-header
+              %h2 Experience
+
+            .accordion#companies
+
+              .accordion-group
+                .accordion-heading
+                  %a.accordion-toggle{:"data-toggle"=>'collapse', :"data-parent"=>'#companies', :href=>'#safekick'}
+                    SafeKick Americas, LLC
+                    %small.pull-right January 2010 - Present
+                .accordion-body.collapse#safekick
+                  .accordion-inner
+                    %h3 Managing Developer
+                    %h4 Company
+                    SafeKick makes a well control and monitoring system for drilling operations that models what's going on downhole through hydraulic / thermal simulation in software and monitoring of mud return in hardware.
+                    %h4 Role
+                    I led the software development team that created two of our applications: the SafeVision Standalone package (written in C#.net and Ruby) and the SafeVision Rig Package (written in C#.net and Lua with a Javascript frontend). I also did extensive work on the third product, the SafeVision Well Data Package. I was responsible for technical design and architecture, allocating and directing developers, performing code reviews and enforcing code and design standards, choosing tools and libraries, and general development.
+
+              .accordion-group
+                .accordion-heading
+                  %a.accordion-toggle{:"data-toggle"=>'collapse', :"data-parent"=>'#companies', :href=>'#superpoints'}
+                    Westlake Products
+                    %small.pull-right July 2009 - January 2010
+                .accordion-body.collapse#superpoints
+                  .accordion-inner
+                    %h3 Software Developer
+                    %h4 Company
+                    SuperPoints is a social networking application where users complete offers from affiliates in order to get rewards. The application is several sites (currently seven) using Ruby on Rails.
+                    %h4 Role
+                    My responsibilities were pretty much everything, ranging from writing new reports and monitoring tools, fixing errors found in the logs, frontend development (using MooTools, Prototype, and CSS), to system administration, and everything in between.
+
+              .accordion-group
+                .accordion-heading
+                  %a.accordion-toggle{:"data-toggle"=>'collapse', :"data-parent"=>'#companies', :href=>'#imagitek'}
+                    Imagitek Ltd. (now called Prodagio Software)
+                    %small.pull-right July 2006 - March 2009
+                .accordion-body.collapse#imagitek
+                  .accordion-inner
+                    %h3 Software Developer
+                    %h4 Vendor Self-Serve
+                    My most recent project was Vendor Self-Serve, a high-availability tool for allowing vendors to electronically submit invoices to our clients. This is written in Ruby on Rails, an open-source web development platform designed for rapid development; we were able to write the core application in 3-4 weeks, and the total project cycle was about six months. My responsibilities are writing, testing, and debugging Ruby code.
+                    %h4 Prodagio Self-Serve
+                    In 2008 I worked on Prodagio Self-Serve, a forms application used by one of our client companies to streamline data entry for contracts. This was also written in Ruby on Rails. My responsibilities are writing, testing, and debugging Ruby code, as well as interfacing with clients to gather requirements and address issues.
+                    %h4 Prodagio A/P
+                    Before this, and from Feb-March 2009, my main responsibility was to extend and maintain Prodagio A/P, an enterprise web application for managing invoice payments in Fortune 500 companies. This application was written in Java for the Documentum Webtop platform. It has a code base of several thousand source files. My responsibilities were implementing new features requested by clients, fixing defects, and working with clients and business personnel during deployment and requirements gathering.
+
+              .accordion-group
+                .accordion-heading
+                  %a.accordion-toggle{:"data-toggle"=>'collapse', :"data-parent"=>'#companies', :href=>'#saic'}
+                    SAIC
+                    %small.pull-right September 2000 - September 2005
+                .accordion-body.collapse#saic
+                  .accordion-inner
+                    %h3 Software Developer, International Space Station Payloads Office
+                    %h4 Company
+                    SAIC is a government contractor. My contract was for the ISS Payloads Office, which analyzed the utilization capabilities of the International Space Station (how many and what types of scientific experiments could be supported) during and after construction, and given different proposed construction plans.
+                    %h4 Role
+                    I designed, developed and maintained the Payload Utilization Modeler (PLUM) application used by the ISS Payloads Office for strategic planning.  PLUM uses statistical analysis methods to determine the resource limits to ISS utilization, thereby providing managers with insight into what systems need enhancement or modification to optimize research. It is written in a combination of languages including C++, Java, Perl, and PHP. My specific responsibilities were to design and write the simulation/modeling program (all written in C++, roughly two thousand lines), two different interfaces (one in PHP, one in Java using Swing) and PostScript documents to generate reports.
+
+          -# ----------------------------------------
+          %section#interests
+            .page-header
+              %h2 Interests
+
+          -# ----------------------------------------
+          %section#education
+            .page-header
+              %h2 Education
